@@ -1,0 +1,37 @@
+/ {
+    fragment@model {
+        target-path = "/";
+        __overlay__ {
+            ssp {
+                compatible = "ssp";
+            };
+        };
+    };
+};
+/* /home/dpi/qb5_8814/workspace/P4_1716/android/kernel/kmodule/sensorhub/mtk/mt6765/dts/sensorhub_mt6765.a12.dtsi */
+/ {
+	fragment@model {
+		target-path = "/";
+		__overlay__ {
+			ssp {
+				ssp-acc-position = <9>;
+				ssp-acc-motor-coef = <7>;
+				ssp-prox-thresh = /bits/ 16 <350 250>;
+			};
+		};
+	};
+};
+
+/* /home/dpi/qb5_8814/workspace/P4_1716/android/kernel/kmodule/sensorhub/mtk/mt6765/dts/sensorhub_mt6765.a12.01.dtsi */
+/ {
+	fragment@model {
+		target-path = "/";
+		__overlay__ {
+			ssp {
+				ssp-acc-position = <10>;
+				ssp-acc-motor-coef = <7>;
+				ssp-prox-thresh = /bits/ 16 <350 250>;
+			};
+		};
+	};
+};

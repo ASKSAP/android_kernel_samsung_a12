@@ -1,0 +1,11 @@
+#define PIN_EXPAND(pin) #pin
+
+#define SEC_GPIO(src, type, num)	PIN_EXPAND(gpio##num)
+#define SEC_GPIO_REF(src, type, num)	&type num
+#define SEC_GPIO_NUM(src, type, num)	num
+#define SEC_GPIO_TYPE(src, type, num)	&type
+
+#define MTK_PINMUX(gpio, func) (MTK_PIN_NO(gpio) | func)
+#define SEC_ADC(type, num) <&type num>
+#define SEC_ADC_OPT(type, num) ,<&type num>
+#define SEC_ADC_NUM(type, num) <num>
